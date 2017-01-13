@@ -50,7 +50,7 @@ class BoardsController < OpenReadController
   end
 
   def board_params
-    params.require(:board).permit(:text)
+    params.require(:board).permit(:name, :length, :width)
   end
 
   private :set_board, :board_params
