@@ -44,12 +44,14 @@ ActiveRecord::Schema.define(version: 20170113165545) do
   add_index "examples", ["user_id"], name: "index_examples_on_user_id", using: :btree
 
   create_table "pedals", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",       null: false
     t.decimal  "length"
     t.decimal  "width"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "pedals", ["name"], name: "index_pedals_on_name", unique: true, using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",           null: false
