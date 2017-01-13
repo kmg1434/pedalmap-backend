@@ -12,7 +12,7 @@ curl "${API}${URL_PATH}" \
   --data '{
     "board": {
       "name": "lead",
-      "length": 2,
-      "width": 1
+      "length": 2.99,
+      "width": 1.99
     }
   }'
