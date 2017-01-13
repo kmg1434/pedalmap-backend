@@ -45,7 +45,7 @@ class BoardsController < OpenReadController
     head :no_content
   end
 
-  def set_example
+  def set_board
     @board = current_user.boards.find(params[:id])
   end
 
@@ -53,5 +53,5 @@ class BoardsController < OpenReadController
     params.require(:board).permit(:text)
   end
 
-  private :set_example, :board_params
+  private :set_board, :board_params
 end

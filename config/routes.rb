@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-
   # EXAMPLE ROUTES
   resources :examples, except: [:new, :edit]
 
@@ -14,5 +13,4 @@ Rails.application.routes.draw do
   # BOARD ROUTES
   resources :boards
   resources :pedals
-
 end
