@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170113164529) do
+ActiveRecord::Schema.define(version: 20170113165545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "board_pedals", force: :cascade do |t|
+    t.integer  "board_id"
+    t.integer  "pedal_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "board_pedals", ["board_id"], name: "index_board_pedals_on_board_id", using: :btree
+  add_index "board_pedals", ["pedal_id"], name: "index_board_pedals_on_pedal_id", using: :btree
 
   create_table "boards", force: :cascade do |t|
     t.string   "name"
@@ -52,5 +62,7 @@ ActiveRecord::Schema.define(version: 20170113164529) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["token"], name: "index_users_on_token", unique: true, using: :btree
 
+  add_foreign_key "board_pedals", "boards"
+  add_foreign_key "board_pedals", "pedals"
   add_foreign_key "examples", "users"
 end
