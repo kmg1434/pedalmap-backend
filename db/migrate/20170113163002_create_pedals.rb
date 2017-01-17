@@ -4,6 +4,7 @@ class CreatePedals < ActiveRecord::Migration
       t.string :name, null: false, index: { unique: true }
       t.float :length
       t.float :width
+      t.string :link # will hold the URL for the image of the pedal
 
       t.timestamps null: false
     end

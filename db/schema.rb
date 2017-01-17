@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20170113185625) do
     t.string   "name",       null: false
     t.float    "length"
     t.float    "width"
+    t.string   "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

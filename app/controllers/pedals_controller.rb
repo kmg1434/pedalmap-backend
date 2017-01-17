@@ -50,8 +50,8 @@ class PedalsController < OpenReadController
   end
 
   def pedal_params
-    params.require(:pedal).permit(:name, :length, :width)
+    params.require(:pedal).permit(:name, :length, :width, :link)
   end
 
-  private :set_example, :pedal_params
+  private :set_pedal, :pedal_params
 end
