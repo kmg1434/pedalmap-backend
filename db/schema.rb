@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20170113185625) do
 
   create_table "boards", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "length"
-    t.decimal  "width"
+    t.float    "length"
+    t.float    "width"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(version: 20170113185625) do
 
   create_table "pedals", force: :cascade do |t|
     t.string   "name",       null: false
-    t.decimal  "length"
-    t.decimal  "width"
+    t.float    "length"
+    t.float    "width"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
