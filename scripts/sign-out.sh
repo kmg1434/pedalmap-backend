@@ -1,13 +1,9 @@
-#!/bin/bash
-
 API="http://localhost:4741"
 URL_PATH="/sign-out"
 ID="1"
-TOKEN="BAhJIiVhNmM5NGIyYWJiOTUyMzUwYTUwMTM0N2IxY2YyOTA4NwY6BkVG--61d68bd78b21837c75a6c1b3dca9f45a4d64ab72"
+TOKEN="BAhJIiVlMTU4MjY2MmMwZTM0OGI1YjY2NWZlMzA3MjI4NDNjOQY6BkVG--849defe4c2650de44b349486c43ecb2d8469ed44"
 curl "${API}${URL_PATH}/${ID}" \
   --include \
   --request DELETE \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=$TOKEN"
-
-echo

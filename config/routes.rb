@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   # BOARD and PEDAL ROUTES
   resources :boards
   resources :pedals
+  resources :velcros
 end

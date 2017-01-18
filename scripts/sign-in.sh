@@ -1,5 +1,3 @@
-#!/bin/bash
-
 API="http://localhost:4741"
 URL_PATH="/sign-in"
 EMAIL="a@a.com"
@@ -15,5 +13,3 @@ curl "${API}${URL_PATH}" \
       "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
-
-echo

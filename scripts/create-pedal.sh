@@ -1,10 +1,10 @@
-NAME="tube scrambler"
-LENGTH=3.15
-WIDTH=2.51
+NAME="ring mod"
+LENGTH=4.15
+WIDTH=2.16
 LINK="http://www.guitartonetalk.com/wp-content/uploads/2013/04/ibanez-tubescreamer-ts8081.jpg"
 API="http://localhost:4741"
 URL_PATH="/pedals"
-TOKEN="BAhJIiViNzA4NTk1NzdkNGY5NTUzNTc5OGJlNDM2NTlmYTIxMwY6BkVG--e7ca521ca1417eff842292edb5a573667b2d54f0"
+TOKEN="BAhJIiVlMTU4MjY2MmMwZTM0OGI1YjY2NWZlMzA3MjI4NDNjOQY6BkVG--849defe4c2650de44b349486c43ecb2d8469ed44"
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \

@@ -1,4 +1,4 @@
-class PedalsController < OpenReadController
+class PedalsController < ApplicationController
   before_action :set_pedal, only: [:update, :destroy]
 
   # GET /pedals
