@@ -18,7 +18,7 @@ class PedalsController < OpenReadController
   # POST /pedals
   # POST /pedals.json
   def create
-    @pedal = current_user.pedals.build(pedal_params)
+    @pedal = Pedal.create(pedal_params)
 
     if @pedal.save
       render json: @pedal, status: :created
