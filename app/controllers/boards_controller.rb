@@ -4,7 +4,7 @@ class BoardsController < OpenReadController
   # GET /boards
   # GET /boards.json
   def index
-    @boards = Board.all
+    @boards = current_user.boards
 
     render json: @boards
   end

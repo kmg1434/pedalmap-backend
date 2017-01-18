@@ -1,5 +1,5 @@
 class BoardSerializer < ActiveModel::Serializer
-  attributes :id, :name, :length, :width, :pedals, :velcro
+  attributes :id, :name, :length, :width, :pedals
   attributes :user_id
 
   def velcro
