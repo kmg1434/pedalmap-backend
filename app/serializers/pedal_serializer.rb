@@ -5,5 +5,5 @@ class PedalSerializer < ActiveModel::Serializer
              :width,
              :link
 
-  has_many :boards
+  # has_many :boards
 end
