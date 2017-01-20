@@ -1,11 +1,9 @@
 class PedalSerializer < ActiveModel::Serializer
-  attributes :id, :name, :length, :width, :link, :boards
+  attributes :id,
+             :name,
+             :length,
+             :width,
+             :link
 
-  def velcros
-    object.velcros.pluck(:id)
-  end
-
-  def editable
-    scope == object.user
-  end
+  has_many :boards
 end

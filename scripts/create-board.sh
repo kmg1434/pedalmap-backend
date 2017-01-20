@@ -1,9 +1,9 @@
-NAME="jazz keys"
+NAME="joel joel joel"
 LENGTH=4.20
 WIDTH=7.77
 API="http://localhost:4741"
 URL_PATH="/boards"
-TOKEN="BAhJIiVlMTU4MjY2MmMwZTM0OGI1YjY2NWZlMzA3MjI4NDNjOQY6BkVG--849defe4c2650de44b349486c43ecb2d8469ed44"
+TOKEN="BAhJIiU3NzFiZTA1NTI1OGIwYWNjNmIxOWZlNTU4ZTg2ZjZjOAY6BkVG--a81896987a45fe7cbe1f4554e0d0ef6283afd279"
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
